@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Primary Meta Tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ram Sir</title>
+
+<meta name="description" content="Ram Sir is a technical trainer in Indore providing step-by-step technology roadmaps for programming, web development, data analytics, cyber security, AI tools, and coding careers for students and professionals.">
+
+<meta name="keywords" content="Ram Sir, Ram Sir Indore, technology roadmap, programming roadmap, coding roadmap, web development roadmap, cyber security roadmap, data analytics, python training, full stack developer, AI tools, software training Indore">
+
+<meta name="author" content="Ram Sir">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Ram Sir | Technology Roadmaps & Programming Trainer in Indore">
+<meta property="og:description" content="Learn programming, web development, cyber security, and AI technologies with structured roadmaps by Ram Sir, an experienced technical trainer in Indore.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ram Sir | Coding & Technology Roadmaps in Indore">
+<meta name="twitter:description" content="Best coding, programming, web development, and cyber security roadmaps by Ram Sir for career growth in technology.">
+
+<!-- Local SEO -->
+<meta name="geo.region" content="IN-MP">
+<meta name="geo.placename" content="Indore">
+<meta name="geo.position" content="22.7196;75.8577">
+<meta name="ICBM" content="22.7196, 75.8577">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --primary-dark: #554FD8;
+            --secondary: #FF6584;
+            --accent: #36D1DC;
+            --light: #F8F9FF;
+            --dark: #2D2B55;
+            --gray: #8A8AA3;
+            --success: #4CAF50;
+            --gradient: linear-gradient(135deg, #6C63FF 0%, #36D1DC 100%);
+            --gradient-dark: linear-gradient(135deg, #554FD8 0%, #2D2B55 100%);
+            --shadow: 0 12px 30px rgba(108, 99, 255, 0.15);
+            --shadow-dark: 0 20px 40px rgba(0, 0, 0, 0.1);
+            --border-radius: 16px;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 70px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            color: var(--dark);
+            display: inline-block;
+            padding-bottom: 15px;
+            position: relative;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            background: var(--gradient);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 38px;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-dark);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .btn:hover:before {
+            left: 0;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(108, 99, 255, 0.3);
+        }
+
+        .btn i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Fixed Contact Buttons */
+        .fixed-contact-buttons {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            text-decoration: none;
+            position: relative;
+        }
+
+        .contact-btn.whatsapp {
+            background: #25D366;
+        }
+
+        .contact-btn.call {
+            background: var(--primary);
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .contact-btn span {
+            position: absolute;
+            right: 70px;
+            background: white;
+            color: var(--dark);
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .contact-btn:hover span {
+            opacity: 1;
+            visibility: visible;
+            right: 80px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            font-size: 2.2rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: var(--gradient);
+            bottom: 0;
+            left: 0;
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 120px;
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.05) 0%, rgba(54, 209, 220, 0.05) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero:before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(54, 209, 220, 0.1) 100%);
+            top: -300px;
+            right: -200px;
+            z-index: 0;
+        }
+
+        .hero:after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255, 101, 132, 0.1) 0%, rgba(108, 99, 255, 0.1) 100%);
+            bottom: -200px;
+            left: -100px;
+            z-index: 0;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            color: var(--dark);
+            margin-bottom: 25px;
+            line-height: 1.1;
+        }
+
+        .hero-text h1 span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-text h1 span:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            background: rgba(108, 99, 255, 0.2);
+            bottom: 5px;
+            left: 0;
+            z-index: -1;
+            border-radius: 5px;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .stat-text {
+            font-size: 1rem;
+            color: var(--gray);
+            margin-top: 5px;
+        }
+
+        .hero-icons {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            position: relative;
+        }
+
+        .icon-box {
+            background: white;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            font-size: 2.5rem;
+            color: var(--primary);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .icon-box:nth-child(2) {
+            animation-delay: 1s;
+            color: #F06529; /* HTML color */
+        }
+
+        .icon-box:nth-child(3) {
+            animation-delay: 2s;
+            color: #2965F1; /* CSS color */
+        }
+
+        .icon-box:nth-child(4) {
+            animation-delay: 3s;
+            color: #F0DB4F; /* JS color */
+        }
+
+        .icon-box:nth-child(5) {
+            animation-delay: 1.5s;
+            color: #61DAFB; /* React color */
+        }
+
+        .icon-box:nth-child(6) {
+            animation-delay: 2.5s;
+            color: #339933; /* Node.js color */
+        }
+
+        .icon-box:nth-child(7) {
+            animation-delay: 3.5s;
+            color: #4479A1; /* MongoDB color */
+        }
+
+        .icon-box:nth-child(8) {
+            animation-delay: 4s;
+            color: #007ACC; /* Python color */
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Roadmaps Section */
+        .roadmaps {
+            background-color: white;
+        }
+
+        .roadmap-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            height: 100%;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-dark);
+            border-color: var(--primary);
+        }
+
+        .card-icon {
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(54, 209, 220, 0.1) 100%);
+            color: var(--primary);
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-icon:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(108, 99, 255, 0.1);
+            top: -50px;
+            right: -50px;
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .card-content h3 {
+            color: var(--dark);
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .card-content p {
+            color: var(--gray);
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .card-link i {
+            margin-left: 8px;
+            transition: var(--transition);
+        }
+
+        .card-link:hover {
+            color: var(--secondary);
+        }
+
+        .card-link:hover i {
+            transform: translateX(8px);
+        }
+
+        /* Query Form */
+        .query-form {
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.03) 0%, rgba(54, 209, 220, 0.03) 100%);
+        }
+
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-container:before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.05) 0%, rgba(54, 209, 220, 0.05) 100%);
+            top: -150px;
+            right: -150px;
+        }
+
+        .form-container:after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255, 101, 132, 0.05) 0%, rgba(108, 99, 255, 0.05) 100%);
+            bottom: -100px;
+            left: -100px;
+        }
+
+        .form-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 18px 20px;
+            border: 2px solid #E6E6F0;
+            border-radius: 12px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: white;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 180px;
+            resize: vertical;
+        }
+
+        /* Trainer Section */
+        .trainer {
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trainer:before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.05) 0%, rgba(54, 209, 220, 0.05) 100%);
+            top: -250px;
+            left: -250px;
+        }
+
+        .trainer-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .trainer-icon {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .trainer-icon-container {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, #6C63FF 0%, #36D1DC 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10rem;
+            color: white;
+            box-shadow: var(--shadow-dark);
+            position: relative;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .trainer-info {
+            flex: 1;
+        }
+
+        .trainer-info h2 {
+            color: var(--dark);
+            font-size: 3rem;
+        }
+
+        .trainer-info .title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(108, 99, 255, 0.1);
+            border-radius: 50px;
+        }
+
+        .trainer-info p {
+            color: var(--gray);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .trainer-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .skill-tag {
+            background: rgba(108, 99, 255, 0.1);
+            color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 80px 0 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer:before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(54, 209, 220, 0.1) 100%);
+            top: -200px;
+            right: -200px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: var(--accent);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .footer-column p {
+            color: #B8B8D1;
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #B8B8D1;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links a i {
+            margin-right: 10px;
+            font-size: 0.9rem;
+            width: 20px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #B8B8D1;
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero-text h1 {
+                font-size: 3.5rem;
+            }
+            
+            .trainer-icon-container {
+                width: 350px;
+                height: 350px;
+                font-size: 8rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .trainer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .trainer-icon {
+                margin-bottom: 40px;
+            }
+            
+            .trainer-skills {
+                justify-content: center;
+            }
+            
+            .footer-column h3:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .footer-links a {
+                justify-content: center;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 0;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+                border-radius: 0 0 20px 20px;
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+            
+            .form-container {
+                padding: 40px 30px;
+            }
+            
+            .roadmap-cards {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+            
+            .contact-btn span {
+                display: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-text h1 {
+                font-size: 2.3rem;
+            }
+            
+            .hero-text p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 70px 0;
+            }
+            
+            .card {
+                margin-bottom: 20px;
+            }
+            
+            .btn {
+                padding: 16px 30px;
+            }
+            
+            .hero-icons {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+            }
+            
+            .icon-box {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+            
+            .trainer-icon-container {
+                width: 280px;
+                height: 280px;
+                font-size: 6rem;
+            }
+            
+            .fixed-contact-buttons {
+                right: 15px;
+                bottom: 15px;
+            }
+            
+            .contact-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Contact Buttons -->
+    <div class="fixed-contact-buttons">
+        <a href="tel:+919753528324" class="contact-btn call">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call Now</span>
+        </a>
+        <a href="https://wa.me/919753528324" target="_blank" class="contact-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>Ram Sir</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#roadmaps">Roadmaps</a></li>
+                    <li><a href="#query">Contact</a></li>
+                    <li><a href="#trainer">Trainer</a></li>
+                    <li><a href="#footer">About</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate__animated animate__fadeInLeft">
+                    <h1>Master All Technology with <span>Ram Sir</span></h1>
+                    <p>Transform your career with comprehensive technology roadmaps designed by industry expert Ram Sir. Learn in-demand skills with structured guidance and hands-on projects.</p>
+                    <a href="#roadmaps" class="btn"><i class="fas fa-graduation-cap"></i> Explore Roadmaps</a>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-text">Technology Roadmaps</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-text">Students Trained</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-text">Practical Focus</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-icons animate__animated animate__fadeInRight">
+                    <div class="icon-box">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmaps Section -->
+    <section class="roadmaps" id="roadmaps">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technology Roadmaps</h2>
+                <p>Comprehensive learning paths designed by industry expert Ram Sir to guide you from beginner to advanced level</p>
+            </div>
+            <div class="roadmap-cards">
+                <!-- C Programming -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-c"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>C Programming</h3>
+                        <p>Master the fundamentals of programming with C. Learn data structures, algorithms, memory management, and system programming.</p>
+                        <a href="https://ramgopal-prajapati.github.io/croadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- C++ -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>C++ Development</h3>
+                        <p>Advanced C++ programming, OOP concepts, STL, game development, and high-performance computing.</p>
+                        <a href="https://ramgopal-prajapati.github.io/cpproadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Java Full Stack -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Java Full Stack</h3>
+                        <p>Complete Java ecosystem: Core Java, Spring Boot, Hibernate, Microservices, and frontend integration.</p>
+                        <a href="https://ramgopal-prajapati.github.io/javafullstackroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Python -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Python Programming</h3>
+                        <p>Python fundamentals, scripting, automation, data analysis, and introduction to machine learning.</p>
+                        <a href="https://ramgopal-prajapati.github.io/pythonroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Python Full Stack -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Python Full Stack</h3>
+                        <p>Django/Flask backend development, React frontend, REST APIs, databases, and deployment.</p>
+                        <a href="https://ramgopal-prajapati.github.io/pythonroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Data Analytics -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Data Analytics</h3>
+                        <p>Data visualization, statistical analysis, Excel, SQL, Tableau, and business intelligence tools.</p>
+                        <a href="https://ramgopal-prajapati.github.io/daroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Data Science -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Data Science</h3>
+                        <p>Machine learning, deep learning, statistical modeling, Python libraries, and real-world projects.</p>
+                        <a href="https://ramgopal-prajapati.github.io/dsroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Cybersecurity -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cybersecurity</h3>
+                        <p>Ethical hacking, network security, cryptography, penetration testing, and security tools.</p>
+                        <a href="https://ramgopal-prajapati.github.io/cybersecurityroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Video Editing & Photography -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Video Editing & Photography</h3>
+                        <p>Adobe Premiere Pro, After Effects, Photoshop, Lightroom, and professional photography techniques.</p>
+                        <a href="https://ramgopal-prajapati.github.io/videophotoroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- MERN Stack -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>MERN Stack</h3>
+                        <p>MongoDB, Express.js, React.js, Node.js - Full stack JavaScript development from frontend to backend.</p>
+                        <a href="https://ramgopal-prajapati.github.io/mernroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Frontend Development -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Frontend Development</h3>
+                        <p>HTML5, CSS3, JavaScript, React, Vue.js, responsive design, and modern frontend frameworks.</p>
+                        <a href="https://ramgopal-prajapati.github.io/frontendroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Backend Development -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Backend Development</h3>
+                        <p>Node.js, Python, Java, APIs, databases, authentication, and server-side programming.</p>
+                        <a href="https://ramgopal-prajapati.github.io/backendroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- SQL & Databases -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>SQL & Databases</h3>
+                        <p>Database design, SQL queries, MySQL, PostgreSQL, MongoDB, and database administration.</p>
+                        <a href="https://ramgopal-prajapati.github.io/sqlroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Power BI -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Power BI & Analytics</h3>
+                        <p>Data visualization, business intelligence, Power BI dashboards, DAX, and reporting tools.</p>
+                        <a href="https://ramgopal-prajapati.github.io/powerbiroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Development -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mobile Development</h3>
+                        <p>Flutter, React Native, iOS (Swift), Android (Kotlin), and cross-platform mobile app development.</p>
+                        <a href="https://ramgopal-prajapati.github.io/androidroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- AI Development -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>AI Development</h3>
+                        <p>Artificial Intelligence, neural networks, TensorFlow, PyTorch, NLP, and computer vision.</p>
+                        <a href="https://ramgopal-prajapati.github.io/airoadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Automation -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Automation & Testing</h3>
+                        <p>Selenium, DevOps, CI/CD pipelines, automated testing, and infrastructure as code.</p>
+                        <a href="https://ramgopal-prajapati.github.io/automationroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Cloud Computing -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cloud Computing</h3>
+                        <p>AWS, Azure, Google Cloud, cloud architecture, serverless computing, and DevOps on cloud.</p>
+                        <a href="https://ramgopal-prajapati.github.io/cloudroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blockchain -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Blockchain Development</h3>
+                        <p>Smart contracts, Ethereum, Solidity, DApps, cryptocurrency, and decentralized systems.</p>
+                        <a href="https://ramgopal-prajapati.github.io/blockchainroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- DevOps -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>DevOps Engineering</h3>
+                        <p>Docker, Kubernetes, Jenkins, Terraform, monitoring, and infrastructure automation.</p>
+                        <a href="https://ramgopal-prajapati.github.io/devopsroadmap/" class="card-link">Explore Path <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Query Form Section -->
+    <section class="query-form" id="query">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Your Personalized Roadmap</h2>
+                <p>Contact us for a free consultation and personalized learning path based on your goals</p>
+            </div>
+            <div class="form-container">
+                <div class="form-content">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="queryForm">
+                        <!-- Web3Forms Access Key - Replace with your actual key -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New Query from Tech Guru Website">
+                        <input type="hidden" name="from_name" value="Tech Guru Website">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="technology">Technology Interest *</label>
+                                <select id="technology" name="technology" class="form-control" required>
+                                    <option value="">Select a technology</option>
+                                    <option value="c">C Programming</option>
+                                    <option value="cpp">C++ Development</option>
+                                    <option value="java">Java Full Stack</option>
+                                    <option value="python">Python Programming</option>
+                                    <option value="python-fullstack">Python Full Stack</option>
+                                    <option value="data-analytics">Data Analytics</option>
+                                    <option value="data-science">Data Science</option>
+                                    <option value="cybersecurity">Cybersecurity</option>
+                                    <option value="video-editing">Video Editing & Photography</option>
+                                    <option value="mern">MERN Stack</option>
+                                    <option value="frontend">Frontend Development</option>
+                                    <option value="backend">Backend Development</option>
+                                    <option value="sql">SQL & Databases</option>
+                                    <option value="powerbi">Power BI</option>
+                                    <option value="mobile">Mobile Development</option>
+                                    <option value="ai">AI Development</option>
+                                    <option value="automation">Automation</option>
+                                    <option value="cloud">Cloud Computing</option>
+                                    <option value="other">Other Technology</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Current Experience Level</label>
+                            <select id="experience" name="experience" class="form-control">
+                                <option value="">Select your experience</option>
+                                <option value="beginner">Beginner (No experience)</option>
+                                <option value="intermediate">Intermediate (Some knowledge)</option>
+                                <option value="advanced">Advanced (Looking to specialize)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Query / Goals *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Please describe your goals, questions, or what you'd like to achieve" required></textarea>
+                        </div>
+                        
+                        <div class="form-group" style="text-align: center;">
+                            <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                        </div>
+                        
+                        <div id="form-result" style="display: none; margin-top: 20px; padding: 15px; border-radius: 8px; text-align: center; font-weight: 600;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainer Section -->
+    <section class="trainer" id="trainer">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Your Mentor</h2>
+                <p>Learn from an industry expert with 2+ years of experience in technology training</p>
+            </div>
+            <div class="trainer-container">
+                <div class="trainer-icon">
+                    <div class="trainer-icon-container">
+                       <img src="me.jpg" alt="" width="350px" style="border-radius: 40%;">
+                    </div>
+                </div>
+                <div class="trainer-info">
+                    <h2>Ram Sir</h2>
+                    <div class="title">Sr. Technical Trainer</div>
+                    <p>With over 2+ years of experience in the tech industry and education, Ram Sir has trained thousands of students who now work at top tech companies globally. His practical approach focuses on real-world applications and industry requirements.</p>
+                    <p>He specializes in simplifying complex technology concepts and creating structured learning paths that ensure students not only understand but can apply their knowledge effectively in their careers.</p>
+                    <div class="trainer-skills">
+                        <span class="skill-tag">Python Expert</span>
+                        <span class="skill-tag">Full-Stack Development</span>
+                        <span class="skill-tag">Cloud Architecture</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Mentoring</span>
+                        <span class="skill-tag">Career Guidance</span>
+                        <span class="skill-tag">Project-Based Learning</span>
+                        <span class="skill-tag">Industry Trends</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Ram Sir</h3>
+                    <p>Master technology with comprehensive roadmaps designed by industry expert Ram Sir. Start your journey to becoming a tech professional today with structured guidance and hands-on projects.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Ramgopal Prajapati"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/ramgopal-prajapati-b30237264/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/iamramsir"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@ramsirdevix"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#roadmaps"><i class="fas fa-chevron-right"></i> Technology Roadmaps</a></li>
+                        <li><a href="#query"><i class="fas fa-chevron-right"></i> Get Consultation</a></li>
+                        <li><a href="#trainer"><i class="fas fa-chevron-right"></i> Trainer Profile</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Top Roadmaps</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Python Full Stack</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> MERN Stack</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Data Science</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cybersecurity</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cloud Computing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+919753528324"><i class="fas fa-phone-alt"></i> +91 97535 28324</a></li>
+                        <li><a href="mailto:contact@techguru.com"><i class="fas fa-envelope"></i> contact@techguru.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Tech Hub, Bangalore, India</a></li>
+                        <li><a href="https://wa.me/919753528324" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: +91 97535 28324</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master All Technology with Ram Sir. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #FF6584;"></i> for tech learners</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Form submission with Web3Forms
+        const queryForm = document.getElementById('queryForm');
+        const formResult = document.getElementById('form-result');
+        
+        queryForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Disable submit button
+            const submitBtn = queryForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(queryForm);
+            
+            try {
+                const response = await fetch(queryForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Success message
+                    formResult.style.display = 'block';
+                    formResult.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
+                    formResult.style.color = '#4CAF50';
+                    formResult.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We will contact you soon.';
+                    
+                    // Reset form
+                    queryForm.reset();
+                } else {
+                    // Error message
+                    formResult.style.display = 'block';
+                    formResult.style.backgroundColor = 'rgba(255, 101, 132, 0.1)';
+                    formResult.style.color = '#FF6584';
+                    formResult.innerHTML = '<i class="fas fa-exclamation-circle"></i> There was an error sending your message. Please try again.';
+                }
+            } catch (error) {
+                // Network error
+                formResult.style.display = 'block';
+                formResult.style.backgroundColor = 'rgba(255, 101, 132, 0.1)';
+                formResult.style.color = '#FF6584';
+                formResult.innerHTML = '<i class="fas fa-exclamation-circle"></i> Network error. Please check your connection and try again.';
+            } finally {
+                // Re-enable submit button
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                
+                // Hide message after 10 seconds
+                setTimeout(() => {
+                    formResult.style.display = 'none';
+                }, 10000);
+            }
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.padding = '10px 0';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.padding = '15px 0';
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.05)';
+            }
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe cards for animation
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
